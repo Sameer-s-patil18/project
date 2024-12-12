@@ -70,6 +70,9 @@ const Login = () => {
             </button>
           </div>
         </form>
+        <div className="text-sm text-gray-600">
+          Don't have an account? <a href="/signup" className="text-indigo-600 hover:text-indigo-700">Sign up</a>
+        </div>
       </div>
     </div>
   );

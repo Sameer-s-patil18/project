@@ -3,10 +3,8 @@ import React from 'react';
 const AIRecommendation = ({ recommendation }) => {
   if (!recommendation) return null;
 
-  // Function to process and format sections
   const formatSection = (text) => {
     return text.split('\n').map((line, index) => {
-      // Check if line is a main heading
       if (line.includes(':') && !line.startsWith('-')) {
         const [heading, content] = line.split(':');
         return (
@@ -16,7 +14,6 @@ const AIRecommendation = ({ recommendation }) => {
           </div>
         );
       }
-      // Format list items
       if (line.startsWith('-')) {
         return (
           <li key={index} className="text-gray-700 ml-6">
@@ -24,7 +21,6 @@ const AIRecommendation = ({ recommendation }) => {
           </li>
         );
       }
-      // Regular text
       if (line.trim()) {
         return (
           <p key={index} className="text-gray-700 ml-2">
@@ -38,7 +34,7 @@ const AIRecommendation = ({ recommendation }) => {
 
   return (
     <div className="mt-6 p-6 bg-green-50 rounded-lg">
-      <h3 className="text-xl font-bold text-gray-900 mb-4">AI Analysis</h3>
+      <h3 className="text-xl font-bold text-gray-900 mb-4">Recommendation </h3>
       <div className="space-y-2">
         {formatSection(recommendation)}
       </div>
