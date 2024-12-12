@@ -61,6 +61,20 @@ Recommended Consumption:
 Special Considerations:
 [List allergies and dietary notes]
 
+Warn the user if the food contains any of these allergies:
+Celiac Disease
+Lactose Intolerance
+Food Poisoning
+Irritable Bowel Syndrome (IBS)
+Diabetes
+Cardiovascular Diseases
+Obesity
+Hypertension (High Blood Pressure)
+Gastroesophageal Reflux Disease (GERD)
+Eosinophilic Esophagitis (EoE)
+Non-Celiac Gluten Sensitivity
+Food Protein-Induced Enterocolitis Syndrome (FPIES)
+
 Food Label Content:
 ${text}
 
